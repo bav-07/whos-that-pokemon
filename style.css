@@ -1,5 +1,6 @@
 body {
-    background-color: grey;
+    background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
@@ -9,10 +10,14 @@ body {
     align-items: center;
 }
 
-img {
-    
+#logo {
+    height: 30vh;
+    margin: 2rem;
+}
+
+#pokemon-image {
     width:fit-content;
-    height: 400px;
+    height: 40vh;
 }
 
 .notFound {

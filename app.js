@@ -12,7 +12,7 @@ const fetchPokemon = async () => {
     response = await fetch(`https://pokeapi.co/api/v2/pokemon/${dexId}`);
     jsonData = await response.json();
     // console.log(jsonData);
-    const image = document.querySelector("img");
+    const image = document.querySelector("#pokemon-image");
     image.src = await jsonData.sprites.other["official-artwork"]["front_default"];
     image.classList.add("notFound");
 
@@ -32,7 +32,7 @@ const handleGuess = (event) => {
     if (input !== "") {
         if (input === jsonData.name){
             console.log("correct");
-            document.querySelector("img").classList.remove("notFound");
+            document.querySelector("#pokemon-image").classList.remove("notFound");
             document.querySelector("#feedback").textContent = `That's right!`
         }
         else {
