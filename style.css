@@ -23,3 +23,32 @@ body {
 .notFound {
     filter: grayscale(100%) brightness(0);
 }
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #2d55ff;
+    background-color: white;
+    color: #2d55ff;
+    transition: 0.2s ease;
+
+}
+
+button:hover {
+    background-color: #2d55ff;
+    color: white;
+    transition: 0.1s ease;
+}
+
+button:active {
+    background-color: #233cab;
+    border: 1px solid #233cab;
+
+}
+
+input {
+    padding: 10px;
+    width: 30vw;
+    margin-top: 1rem;
+}
