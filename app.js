@@ -7,7 +7,7 @@ const fetchPokemon = async () => {
     document.querySelector("#feedback").textContent = ""
 
     // console.log("pokemon");
-    const dexId = Math.floor(Math.random() * 800) + 1;
+    const dexId = Math.floor(Math.random() * 905) + 1;
 
     response = await fetch(`https://pokeapi.co/api/v2/pokemon/${dexId}`);
     jsonData = await response.json();

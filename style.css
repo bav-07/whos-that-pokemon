@@ -29,7 +29,7 @@ button {
     padding: 10px;
     border-radius: 20px;
     border: 1px solid #2d55ff;
-    background-color: white;
+    background-color: rgba(0,0,0,0);
     color: #2d55ff;
     transition: 0.2s ease;
 
