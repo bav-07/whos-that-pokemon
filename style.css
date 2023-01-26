@@ -21,7 +21,11 @@ body {
 }
 
 .notFound {
-    filter: grayscale(100%) brightness(0);
+    filter: grayscale(100%) brightness(0) opacity(100);
+}
+
+.invisble {
+    filter: opacity(0);
 }
 
 button {
