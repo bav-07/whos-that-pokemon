@@ -3,14 +3,13 @@ let jsonData;
 let response2;
 let jsonData2;
 
-
 const fetchPokemon = async () => {
 
     document.querySelector("#feedback").textContent = ""
     const image = document.querySelector("#pokemon-image");
     // console.log("pokemon");
     const dexId = Math.floor(Math.random() * 905) + 1;
-    
+    // const dexId = 786;    
 
     response = await fetch(`https://pokeapi.co/api/v2/pokemon/${dexId}`);
     jsonData = await response.json();
@@ -36,8 +35,10 @@ const handleGuess = (event) => {
 
     const input = event.target.guess.value.toLowerCase();
     
+    const pokemonName = jsonData2.name.replace("-"," ");
+
     if (input !== "") {
-        if (input === jsonData2.name){
+        if (input === pokemonName){
             console.log("correct");
             document.querySelector("#pokemon-image").classList.remove("notFound");
             document.querySelector("#feedback").textContent = `That's right!`
